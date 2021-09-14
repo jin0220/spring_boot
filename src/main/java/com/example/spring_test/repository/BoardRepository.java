@@ -1,4 +1,9 @@
 package com.example.spring_test.repository;
 
-public interface BoardRepository {
+import com.example.spring_test.domain.Board;
+
+import java.util.List;
+
+public interface BoardRepository{
+    List<Board> findAll();
 }

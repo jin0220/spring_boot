@@ -1,9 +1,9 @@
 package com.example.spring_test.service;
 
-import com.example.spring_test.domain.BoardDto;
+import com.example.spring_test.domain.Board;
 
 import java.util.List;
 
 public interface BoardService {
-    List<BoardDto> selectBoardList() throws Exception;
+    List<Board> selectBoardList() throws Exception;
 }
