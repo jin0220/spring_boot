@@ -24,4 +24,15 @@ public class BoardController {
 
         return mv;
     }
+
+    @RequestMapping("openBoardWrite")
+    public String openBoardWrite(){
+        return "/boardWrite";
+    }
+
+    @RequestMapping("insertBoard") //boardWrite.html에 form의 속성 action 값으로 호출
+    public String insertBoard(Board board) throws Exception{
+//        boardService.insertBoard(board);
+        return "redirect:/"; //게시글 목록 화면으로 이동
+    }
 }

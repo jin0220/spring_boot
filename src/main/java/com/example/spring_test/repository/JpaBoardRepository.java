@@ -24,4 +24,9 @@ public class JpaBoardRepository implements BoardRepository{
 //        return em.createQuery("select * from board", Board.class).getResultList(); //jpql을 사용하여 데이터 가져옴
         return new ArrayList<>();
     }
+
+    @Override
+    public void insert(Board board) {
+
+    }
 }

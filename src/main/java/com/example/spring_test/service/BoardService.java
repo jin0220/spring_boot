@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface BoardService {
     List<Board> selectBoardList() throws Exception;
+
+    void insertBoard(Board board) throws Exception;
 }

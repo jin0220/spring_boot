@@ -17,4 +17,9 @@ public class BoardServiceImpl implements BoardService{
     public List<Board> selectBoardList() throws Exception {
         return boardRepository.findAll();
     }
+
+    @Override
+    public void insertBoard(Board board) throws Exception {
+        boardRepository.insert(board);
+    }
 }

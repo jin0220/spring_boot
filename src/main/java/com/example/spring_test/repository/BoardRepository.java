@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface BoardRepository{
     List<Board> findAll();
+    void insert(Board board);
 }
